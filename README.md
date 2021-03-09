@@ -11,4 +11,3 @@
 ## Making an outbound HTTP request
 
 ...
-
