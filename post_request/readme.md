@@ -48,5 +48,5 @@ Response:
 You can run the example program on your machine using denodeploy:
 
 ```sh
-denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/handle_post_request/mod.js
+denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/post_request/mod.js
 ```
