@@ -1,13 +1,6 @@
 # Deno Deploy Examples
 
-## POST Request
+This repository contains a list of examples for Deno Deploy.
 
-...
-
-## Respond with JSON/HTML
-
-...
-
-## Making an outbound HTTP request
-
-...
+- [json_html](json_html) - Respond to requests with JSON or HTML.
+- [post_request](post_request) - Handle POST requests.

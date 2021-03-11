@@ -49,6 +49,6 @@ curl --dump-header - https://json-html.deno.dev/html
 You can run the example program on your machine using denodeploy:
 
 ```sh
-denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/respond_with_json/mod.js
+denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/json_html/mod.js
 # Listening at http://localhost:8000
 ```
