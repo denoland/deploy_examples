@@ -1,0 +1,11 @@
+# An object containing the long url and corresponding short code.
+type Link {
+  url: String! @unique
+  code: String! @unique
+}
+
+# Queries to fetch code by url and vice versa.
+type Query {
+  findCodeByUrl(url: String!): Link
+  findUrlByCode(code: String!): Link
+}
