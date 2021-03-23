@@ -68,16 +68,25 @@ export async function getIssues(repository) {
     },
   );
 
-  // If the repository is not found, reflect that with a message.
-  if (response.status === 404) {
-    return {
-      code: "repoNotFound",
-      message: `Repository '${repository}' not found`,
-    };
+  // Handle if the response isn't successful.
+  if (!response.ok) {
+    // If the repository is not found, reflect that with a message.
+    if (response.status === 404) {
+      return {
+        code: "repoNotFound",
+        message: `Repository '${repository}' not found`,
+      };
+    } else {
+      return {
+        code: "serverError",
+        message: `Failed to retrieve issues from GitHub. Try again.`,
+      };
+    }
   }
 
   // Return the issues.
   const issues = await response.json();
+  console.log({ issues });
   return {
     repository,
     issues: issues.map((issue) => ({
