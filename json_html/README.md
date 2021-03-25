@@ -46,9 +46,10 @@ curl --dump-header - https://json-html.deno.dev/html
 
 ## Run Offline
 
-You can run the example program on your machine using denodeploy:
+You can run the example program on your machine using
+[`deployctl`](https://github.com/denoland/deployctl):
 
 ```sh
-denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/json_html/mod.js
+deployctl run https://raw.githubusercontent.com/denoland/deploy_examples/main/json_html/mod.js
 # Listening at http://localhost:8000
 ```
