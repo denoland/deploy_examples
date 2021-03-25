@@ -175,7 +175,7 @@ async function homePage(request: Request) {
             {" "}
             <strong>S</strong>hortener
           </a>
-          <a href="http://github.com/satyarohith">
+          <a href="https://github.com/denoland/deploy_examples/tree/main/yaus">
             <img
               height="32"
               width="32"
