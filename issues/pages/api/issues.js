@@ -86,7 +86,6 @@ export async function getIssues(repository) {
 
   // Return the issues.
   const issues = await response.json();
-  console.log({ issues });
   return {
     repository,
     issues: issues.map((issue) => ({

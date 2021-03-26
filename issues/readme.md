@@ -16,10 +16,11 @@ TODO(@satyarohith): add deploy instructions.
 
 ## Run Offline
 
-You can run the application on your local machine using `denodeploy`.
+You can run the application on your local machine using
+[`deployctl`](https://github.com/denoland/deployctl).
 
 ```
-GITHUB_TOKEN=<token> denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/issues/mod.js
+GITHUB_TOKEN=<token> deployctl run --libs=ns,fetchevent https://raw.githubusercontent.com/denoland/deploy_examples/main/issues/mod.js
 ```
 
 Create a personal access token at https://github.com/settings/tokens without any

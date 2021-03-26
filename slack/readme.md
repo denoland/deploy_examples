@@ -37,10 +37,11 @@ of a random city from the [list](cities.js).
 
 ## Run Offline
 
-You can run the application on your local machine using `denodeploy`.
+You can run the application on your local machine using
+[`deployctl`](https://github.com/denoland/deployctl).
 
 ```
-OPEN_WEATHER_TOKEN=<token> denodeploy https://raw.githubusercontent.com/denoland/deploy_examples/weather/mod.ts
+OPEN_WEATHER_TOKEN=<token> deployctl run --libs=ns,fetchevent https://raw.githubusercontent.com/denoland/deploy_examples/main/slack/mod.ts
 ```
 
 Grab a token at https://openweathermap.org and set the value for the variable.
