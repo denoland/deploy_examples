@@ -3,6 +3,8 @@
 This example demonstrates how to respond to requests with JSON and/or HTML in
 Deno Deploy.
 
+[![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/json_html/mod.js)
+
 - [Try Live Version](#try-live-version)
 - [Run offline](#run-offline)
 
