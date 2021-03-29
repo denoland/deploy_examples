@@ -10,7 +10,7 @@ Visit [`https://issues.deno.dev`](https://issues.deno.dev) for a live version.
 
 ## Deploy
 
-Follow the steps under [`Fauna`](#github) section to obtain a GitHub token and
+Follow the steps under [`GitHub`](#github) section to obtain a GitHub token and
 click on the button below to deploy the application.
 
 [![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/issues/mod.js&env=GITHUB_TOKEN)

@@ -2,6 +2,8 @@
 
 This example demonstrates how to handle POST requests in Deno Deploy.
 
+[![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/post_request/mod.js)
+
 - [Try Live Version](#try-live-version)
 - [Run offline](#run-offline)
 
