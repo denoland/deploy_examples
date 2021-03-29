@@ -10,9 +10,25 @@ Visit [`https://issues.deno.dev`](https://issues.deno.dev) for a live version.
 
 ## Deploy
 
-Instructions to deploy the application on your Deno Deploy account.
+Follow the steps under [`Fauna`](#github) section to obtain a GitHub token and
+click on the button below to deploy the application.
 
-TODO(@satyarohith): add deploy instructions.
+[![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/issues/mod.js&env=GITHUB_TOKEN)
+
+### GitHub
+
+The application uses GitHub API to fetch issues sorted by most number of
+comments. And we need the GitHub PAT (Personal Access Token) to communicate with
+the API.
+
+Here are the steps to obtain one:
+
+1. Go to https://github.com/settings/tokens
+2. Click on **Generate new token**
+3. Fill the **Note** field for your own reference
+4. Scroll down (don't select any scopes) and click on **Generate token**
+
+That's it. You now have a token that you can use with the application.
 
 ## Run Offline
 
@@ -23,5 +39,4 @@ You can run the application on your local machine using
 GITHUB_TOKEN=<token> deployctl run --libs=ns,fetchevent https://raw.githubusercontent.com/denoland/deploy_examples/main/issues/mod.js
 ```
 
-Create a personal access token at https://github.com/settings/tokens without any
-scopes and set the value for the variable.
+Replace `<token>` with you GitHub token.
