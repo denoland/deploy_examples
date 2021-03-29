@@ -144,7 +144,7 @@ async function homePage(request: Request) {
   // populated when someone submits the form. We use this
   // information to either create a new short link or get
   // an existing short link for the url.
-  const { searchParams } = new URL(request.url);
+  const { protocol, host, searchParams } = new URL(request.url);
   const url = searchParams.get("url");
   if (url) {
     let code = await findCode(url);
@@ -197,7 +197,7 @@ async function homePage(request: Request) {
             </button>
           </form>
           {shortCode && <div className="link">
-            <span>{`https://yaus.deno.dev/${shortCode}`}</span>
+            <span>{`${protocol}//${host}/${shortCode}`}</span>
             <button id="clipboard">
               <img
                 height="32"
