@@ -5,6 +5,7 @@
 <img align="center" src="demo.png" width="70%" alt="demo of weather command" />
 
 - [Try Live Version](#try-live-version)
+- [Deploy](#deploy)
 - [Run Offline](#run-offline)
 
 ## Try Live Version
@@ -34,6 +35,24 @@ get weather information of a place.
 
 Additionally, you can avoid passing the city argument to get weather information
 of a random city from the [list](cities.js).
+
+## Deploy
+
+Follow the steps under [`OpenWeather`](#openweather) section to obtain a
+OpenWeather API token and click on the button below to deploy the application.
+
+[![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/slack/mod.ts&env=OPEN_WEATHER_TOKEN)
+
+### OpenWeather
+
+We use OpenWeather API to obtain weather information.
+
+Here are the steps to obtain a token to communicate with the API:
+
+1. Go to https://home.openweathermap.org/api_keys (Login or Sign Up if required)
+2. Name the key under **Create Key** and click on **Generate**
+
+That's it.
 
 ## Run Offline
 

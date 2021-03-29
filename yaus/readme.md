@@ -9,9 +9,10 @@ Visit [`https://yaus.deno.dev`](https://yaus.deno.dev) for a live version.
 
 ## Deploy
 
-Instructions to deploy the application on your Deno Deploy account.
+Follow the steps under [`Fauna`](#fauna) section to obtain a FaunaDB secret and
+click on the button below to deploy the application.
 
-TODO(@satyarohith): add deploy instructions.
+[![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/yaus/mod.tsx&env=FAUNA_SECRET)
 
 ### Fauna
 
