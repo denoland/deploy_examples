@@ -1,3 +1,5 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
 function handleRequest(request) {
   const { pathname } = new URL(request.url);
 
