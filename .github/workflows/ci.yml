@@ -25,3 +25,6 @@ jobs:
 
       - name: Lint
         run: deno lint --unstable
+
+      - name: Type Check
+        run: make type-check

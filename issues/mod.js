@@ -1,3 +1,4 @@
+/// <reference lib="dom.iterable" />
 import { serve } from "https://deno.land/x/sift@0.1.6/mod.ts";
 import homePage from "./pages/home.jsx";
 import notFoundPage from "./pages/404.jsx";
