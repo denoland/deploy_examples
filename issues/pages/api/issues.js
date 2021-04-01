@@ -1,4 +1,4 @@
-import { json, validateRequest } from "https://deno.land/x/sift@0.1.6/mod.ts";
+import { json, validateRequest } from "https://deno.land/x/sift@0.1.7/mod.ts";
 import repositories from "../../data/repositories.js";
 
 export default async function issuesEndpoint(request) {

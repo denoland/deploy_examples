@@ -1,4 +1,4 @@
-import { h } from "https://deno.land/x/sift@0.1.6/mod.ts";
+import { h } from "https://deno.land/x/sift@0.1.7/mod.ts";
 import { formatDistanceToNow } from "https://cdn.skypack.dev/pin/date-fns@v2.16.1-IRhVs8UIgU3f9yS5Yt4w/date-fns.js";
 
 export default function Card({
