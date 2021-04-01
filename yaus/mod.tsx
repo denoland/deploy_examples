@@ -1,10 +1,9 @@
-/// <reference lib="dom.iterable" />
 import {
   h,
   jsx,
   PathParams,
   serve,
-} from "https://deno.land/x/sift@0.1.6/mod.ts";
+} from "https://deno.land/x/sift@0.1.7/mod.ts";
 import { nanoid } from "https://cdn.esm.sh/v14/nanoid@3.1.20/esnext/nanoid.js";
 
 serve({

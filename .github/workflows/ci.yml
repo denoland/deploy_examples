@@ -27,4 +27,4 @@ jobs:
         run: deno lint --unstable
 
       - name: Type Check
-        run: make type-check
+        run: make check

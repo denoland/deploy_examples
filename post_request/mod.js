@@ -1,6 +1,3 @@
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
-
 // Every request to a Deno Deploy program is considered as a fetch event.
 // So let's register our listener that will respond with the result of
 // our request handler on "fetch" events.

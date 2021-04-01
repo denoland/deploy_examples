@@ -1,4 +1,4 @@
-import { h } from "https://deno.land/x/sift@0.1.6/mod.ts";
+import { h } from "https://deno.land/x/sift@0.1.7/mod.ts";
 import Card from "../components/card.jsx";
 import Layout from "../components/layout.jsx";
 import Search from "../components/search.jsx";

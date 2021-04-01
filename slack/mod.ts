@@ -1,10 +1,8 @@
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
 import {
   json,
   serve,
   validateRequest,
-} from "https://deno.land/x/sift@0.1.6/mod.ts";
+} from "https://deno.land/x/sift@0.1.7/mod.ts";
 import { getCardinal } from "https://deno.land/x/cardinal@0.1.0/mod.ts";
 import { getRandomCity } from "./cities.ts";
 
