@@ -38,7 +38,7 @@ async function handleRequest(request: Request) {
         style="font-family: Avenir, Helvetica, Arial, sans-serif; font-size: 1.5rem;"
       >
         <p>
-          Visit <a href="https://github.com/denoland/deploy_examples/tree/main/weather">GitHub</a> 
+          Visit <a href="https://github.com/denoland/deploy_examples/tree/main/slack">GitHub</a>
           page for instructions on how to install this Slash Command on your Slack workspace.
         </p>
       </body>`,
