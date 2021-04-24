@@ -13,7 +13,6 @@ A simple Telegram Bot Command.
 * Next add a command to the bot by using a browser and paste the following url:
 * * `https://api.telegram.org/bot<YOUR_TOKEN>/setMyCommands?commands=[{"command":"ping","description":"Should return a 'pong' from the Bot."}]`
 * Now you can invite the bot to a Group Chat or just PM the bot with the following command "/ping".
-* * `https://api.telegram.org/bot<YOUR_TOKEN>/setWebhook?url=<DOMAIN_NAME>/<YOUR_TOKEN>`
 
 <img align="center" src="demo.png" alt="demo of Telegram Bot Command" />
 
