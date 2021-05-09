@@ -4,7 +4,7 @@ A simple Telegram Bot Command.
 
 ## Tutorial
 
-- Follow the
+1. Follow the
   [official Telegram guide](https://core.telegram.org/bots#3-how-do-i-create-a-bot)
   for creating a Bot.
 - [![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/telegram/mod.ts&env=TOKEN,BOT_NAME)
