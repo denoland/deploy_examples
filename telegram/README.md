@@ -14,7 +14,7 @@ A simple Telegram Bot Command.
 - Click on **Create** to create the project, then on **Deploy** to deploy the
   script.
 - Grab the URL that's displayed under Domains in the Production Deployment card.
-- Go into a browser and paste the following url:
+- Visit the following URL (make sure to replace the template fields):
 -
   - `https://api.telegram.org/bot<YOUR_TOKEN>/setWebhook?url=<DOMAIN_NAME>/<YOUR_TOKEN>`
 - Next add a command to the bot by using a browser and paste the following url:
