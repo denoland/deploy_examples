@@ -23,7 +23,6 @@ A simple Telegram Bot Command.
 - Now you can invite the bot to a Group Chat or just PM the bot with the
   following command "/ping".
 -
-  - `https://api.telegram.org/bot<YOUR_TOKEN>/setWebhook?url=<DOMAIN_NAME>/<YOUR_TOKEN>`
 
 <img align="center" src="demo.png" alt="demo of Telegram Bot Command" />
 
