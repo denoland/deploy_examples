@@ -7,7 +7,7 @@ A simple Telegram Bot Command.
 1. Follow the
   [official Telegram guide](https://core.telegram.org/bots#3-how-do-i-create-a-bot)
   for creating a Bot.
-- [![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/telegram/mod.ts&env=TOKEN,BOT_NAME)
+- Deploy the Bot by clicking on this button: [![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/telegram/mod.ts&env=TOKEN,BOT_NAME)
 - Input TOKEN and BOT_NAME env variable field. The token value should be
   available from the BotFather. The bot name is the bot username that ends with either `_bot` or `Bot`.
   or `Bot`.
