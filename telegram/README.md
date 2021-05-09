@@ -9,7 +9,7 @@ A simple Telegram Bot Command.
   for creating a Bot.
 - [![Deploy this example](https://deno.com/deno-deploy-button.svg)](https://dash.deno.com/new?url=https://raw.githubusercontent.com/denoland/deploy_examples/main/telegram/mod.ts&env=TOKEN,BOT_NAME)
 - Input TOKEN and BOT_NAME env variable field. The token value should be
-  available from the BotFather. The bot name you have set that ends with `_bot`
+  available from the BotFather. The bot name is the bot username that ends with either `_bot` or `Bot`.
   or `Bot`.
 - Click on **Create** to create the project, then on **Deploy** to deploy the
   script.
