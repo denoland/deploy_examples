@@ -1,4 +1,4 @@
-async function handleRequest(request) {
+async function handleRequest(_request) {
   // For making a POST request we need to specify the method property
   // as POST and provide data to the body property in the same object.
   // https://post.deno.dev echoes data we POST to it.
