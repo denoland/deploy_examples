@@ -10,3 +10,4 @@ This repository contains a list of examples for Deno Deploy.
 - [yaus](yaus) - A URL shortener built on top of Deno Deploy and FaunaDB.
 - [issues](issues) - A server rendered (using JSX) website that displays issues
   with most comments of a GitHub repository.
+- [telegram](telegram) - A Telegram Bot Command example.

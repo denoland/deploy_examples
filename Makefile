@@ -9,3 +9,4 @@ check:
 	$(DEPLOYCTL) check --libs=ns,fetchevent discord/mod.ts
 	$(DEPLOYCTL) check --libs=ns,fetchevent slack/mod.ts
 	$(DEPLOYCTL) check --libs=ns,fetchevent yaus/mod.tsx
+	$(DEPLOYCTL) check --libs=ns,fetchevent telegram/mod.ts
