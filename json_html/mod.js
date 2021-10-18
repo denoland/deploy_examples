@@ -1,6 +1,9 @@
+import { listenAndServe } from "https://deno.land/std@0.111.0/http/server.ts";
+
 function handleRequest(request) {
   const { pathname } = new URL(request.url);
 
+  // Respond with HTML
   if (pathname.startsWith("/html")) {
     const html = `<html>
       <p><b>Message:</b> Hello from Deno Deploy.</p>
@@ -18,6 +21,7 @@ function handleRequest(request) {
     });
   }
 
+  // Respond with JSON
   if (pathname.startsWith("/json")) {
     // Use stringify function to convert javascript object to JSON string.
     const json = JSON.stringify({
@@ -52,6 +56,5 @@ function handleRequest(request) {
   );
 }
 
-addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest(event.request));
-});
+console.log("Listening on http://localhost:8080");
+await listenAndServe(":8080", handleRequest);

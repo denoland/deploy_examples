@@ -36,10 +36,10 @@ Generate a secret to access the database:
 ## Run Offline
 
 You can run the application on your local machine using
-[`deployctl`](https://github.com/denoland/deployctl).
+[`deno`](https://github.com/denoland/deno).
 
 ```
-FAUNA_SECRET=<token> deployctl run --libs=ns,fetchevent https://raw.githubusercontent.com/denoland/deploy_examples/main/yaus/mod.tsx
+FAUNA_SECRET=<token> deno run --allow-env --allow-net https://raw.githubusercontent.com/denoland/deploy_examples/main/yaus/mod.tsx
 ```
 
 Replace `<token>` with your FaunaDB secret.

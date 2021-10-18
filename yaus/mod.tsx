@@ -1,9 +1,10 @@
+/** @jsx h */
 import {
   h,
   jsx,
   PathParams,
   serve,
-} from "https://deno.land/x/sift@0.1.7/mod.ts";
+} from "https://deno.land/x/sift@0.4.0/mod.ts";
 import { nanoid } from "https://cdn.esm.sh/v14/nanoid@3.1.20/esnext/nanoid.js";
 
 serve({
@@ -196,16 +197,18 @@ async function homePage(request: Request) {
               Shorten
             </button>
           </form>
-          {shortCode && <div className="link">
-            <span>{`${protocol}//${host}/${shortCode}`}</span>
-            <button id="clipboard">
-              <img
-                height="32"
-                width="32"
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3' /%3E%3C/svg%3E"
-              />
-            </button>
-          </div>}
+          {shortCode && (
+            <div className="link">
+              <span>{`${protocol}//${host}/${shortCode}`}</span>
+              <button id="clipboard">
+                <img
+                  height="32"
+                  width="32"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3' /%3E%3C/svg%3E"
+                />
+              </button>
+            </div>
+          )}
         </main>
         <footer>
           <p>Built using Fauna and Sift. Deployed on Deno Dash.</p>

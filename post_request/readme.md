@@ -48,8 +48,8 @@ Response:
 ## Run Offline
 
 You can run the example program on your machine using
-[`deployctl`](https://github.com/denoland/deployctl):
+[`deno`](https://github.com/denoland/deno):
 
 ```sh
-deployctl run https://raw.githubusercontent.com/denoland/deploy_examples/main/post_request/mod.js
+deno run https://raw.githubusercontent.com/denoland/deploy_examples/main/post_request/mod.js
 ```

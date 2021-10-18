@@ -33,10 +33,10 @@ That's it. You now have a token that you can use with the application.
 ## Run Offline
 
 You can run the application on your local machine using
-[`deployctl`](https://github.com/denoland/deployctl).
+[`deno`](https://github.com/denoland/deno).
 
 ```
-GITHUB_TOKEN=<token> deployctl run --libs=ns,fetchevent https://raw.githubusercontent.com/denoland/deploy_examples/main/issues/mod.js
+GITHUB_TOKEN=<token> deno run --allow-env --allow-net https://raw.githubusercontent.com/denoland/deploy_examples/main/issues/mod.js
 ```
 
 Replace `<token>` with you GitHub token.

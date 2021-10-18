@@ -1,3 +1,5 @@
+import { listenAndServe } from "https://deno.land/std@0.111.0/http/server.ts";
+
 async function handleRequest(_request) {
   // For making a POST request we need to specify the method property
   // as POST and provide data to the body property in the same object.
@@ -37,6 +39,5 @@ async function handleRequest(_request) {
   );
 }
 
-addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest(event.request));
-});
+console.log("Listening on http://localhost:8080");
+await listenAndServe(":8080", handleRequest);

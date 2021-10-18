@@ -57,10 +57,10 @@ That's it.
 ## Run Offline
 
 You can run the application on your local machine using
-[`deployctl`](https://github.com/denoland/deployctl).
+[`deno`](https://github.com/denoland/deno).
 
 ```
-OPEN_WEATHER_TOKEN=<token> deployctl run --libs=ns,fetchevent https://raw.githubusercontent.com/denoland/deploy_examples/main/slack/mod.ts
+OPEN_WEATHER_TOKEN=<token> deno run --allow-env --allow-net https://raw.githubusercontent.com/denoland/deploy_examples/main/slack/mod.ts
 ```
 
 Grab a token at https://openweathermap.org and set the value for the variable.
