@@ -3,7 +3,7 @@ import { listenAndServe } from "https://deno.land/std@0.111.0/http/server.ts";
 async function handleRequest(_request) {
   // We pass the url as the first argument to fetch and an object with
   // additional info like headers, method, and body for POST requests as
-  // the second argument. By default fetch  makes a GET request,
+  // the second argument. By default fetch makes a GET request,
   // so we can skip specifying method for GET requests.
   const response = await fetch("https://api.github.com/users/denoland", {
     headers: {
