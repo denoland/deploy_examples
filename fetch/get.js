@@ -14,7 +14,7 @@ async function handleRequest(_request) {
   });
 
   // The .ok property of response indicates that the request is
-  // sucessfull (status is in range of 200-299).
+  // successful (status is in range of 200-299).
   if (response.ok) {
     // response.json() method reads the body and parses it as JSON.
     // It then returns the data in JavaScript object.
