@@ -1,12 +1,11 @@
-DEPLOYCTL=deno run --allow-read --allow-write --allow-net --allow-env --allow-run --no-check 'https://deno.land/x/deploy/deployctl.ts'
 # Check TypeScript types.
 check:
-	$(DEPLOYCTL) check fetch/get.js
-	$(DEPLOYCTL) check fetch/post.js
-	$(DEPLOYCTL) check post_request/mod.js
-	$(DEPLOYCTL) check json_html/mod.js
-	$(DEPLOYCTL) check --libs=ns,fetchevent issues/mod.js
-	$(DEPLOYCTL) check --libs=ns,fetchevent discord/mod.ts
-	$(DEPLOYCTL) check --libs=ns,fetchevent slack/mod.ts
-	$(DEPLOYCTL) check --libs=ns,fetchevent yaus/mod.tsx
-	$(DEPLOYCTL) check --libs=ns,fetchevent telegram/mod.ts
+	deno cache fetch/get.js
+	deno cache fetch/post.js
+	deno cache post_request/mod.js
+	deno cache json_html/mod.js
+	deno cache issues/mod.js
+	deno cache discord/mod.ts
+	deno cache slack/mod.ts
+	deno cache yaus/mod.tsx
+	deno cache telegram/mod.ts

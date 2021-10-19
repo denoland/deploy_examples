@@ -37,10 +37,10 @@ A simple Telegram Bot Command.
 ## Run Offline
 
 You can run the example program on your machine using
-[`deployctl`](https://github.com/denoland/deployctl):
+[`deno`](https://github.com/denoland/deno):
 
 ```sh
-TOKEN=<your_telegram_bot_token> BOT_NAME=<bot_username> deployctl run https://raw.githubusercontent.com/denoland/deploy_examples/main/telegram/mod.ts
+TOKEN=<your_telegram_bot_token> BOT_NAME=<bot_username> deno run --allow-env --allow-net https://raw.githubusercontent.com/denoland/deploy_examples/main/telegram/mod.ts
 ```
 
 You need to use a tool like [ngrok](https://ngrok.com) to tunnel Telegram

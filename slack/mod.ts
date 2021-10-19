@@ -2,7 +2,7 @@ import {
   json,
   serve,
   validateRequest,
-} from "https://deno.land/x/sift@0.1.7/mod.ts";
+} from "https://deno.land/x/sift@0.4.0/mod.ts";
 import { getCardinal } from "https://deno.land/x/cardinal@0.1.0/mod.ts";
 import { getRandomCity } from "./cities.ts";
 
@@ -146,8 +146,10 @@ async function handleRequest(request: Request) {
               `*${temp}°C*\n`,
               `Feels like ${feelsLike}°C. ${weather[0].main}.`,
               `Wind: \`${windSpeed} m/s ${windDirection}\``,
-              `Humidity: \`${humidity}%\` Visibility: \`${visibility /
-                1000}km\``,
+              `Humidity: \`${humidity}%\` Visibility: \`${
+                visibility /
+                1000
+              }km\``,
               `Sunrise: \`${sunrise}\` Sunset: \`${sunset}\``,
             ].join("\n"),
           },

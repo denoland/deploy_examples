@@ -1,3 +1,5 @@
+import { listenAndServe } from "https://deno.land/std@0.111.0/http/server.ts";
+
 async function handleRequest(_request) {
   // We pass the url as the first argument to fetch and an object with
   // additional info like headers, method, and body for POST requests as
@@ -16,12 +18,15 @@ async function handleRequest(_request) {
   if (response.ok) {
     // response.json() method reads the body and parses it as JSON.
     // It then returns the data in JavaScript object.
-    const { name, login, avatar_url: avatarUrl } = await response.json();
-    return new Response(JSON.stringify({ name, username: login, avatarUrl }), {
-      headers: {
-        "content-type": "application/json; charset=UTF-8",
+    const { name, login, avatar_url: avatar } = await response.json();
+    return new Response(
+      JSON.stringify({ name, username: login, avatar }),
+      {
+        headers: {
+          "content-type": "application/json; charset=UTF-8",
+        },
       },
-    });
+    );
   }
   // fetch() doesn't throw for bad status codes. You need to handle them
   // by checking if the response.ok is true or false.
@@ -38,6 +43,5 @@ async function handleRequest(_request) {
   );
 }
 
-addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest(event.request));
-});
+console.log("Listening on http://localhost:8080");
+await listenAndServe(":8080", handleRequest);

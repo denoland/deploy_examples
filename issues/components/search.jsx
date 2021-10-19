@@ -1,4 +1,4 @@
-import { h } from "https://deno.land/x/sift@0.1.7/mod.ts";
+import { h } from "https://deno.land/x/sift@0.4.0/mod.ts";
 
 /** Validate if the form value follows the appropriate
  *  structure (<owner>/<repo>). */
