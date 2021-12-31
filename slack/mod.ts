@@ -2,7 +2,7 @@ import {
   json,
   serve,
   validateRequest,
-} from "https://deno.land/x/sift@0.4.0/mod.ts";
+} from "https://deno.land/x/sift@0.4.2/mod.ts";
 import { getCardinal } from "https://deno.land/x/cardinal@0.1.0/mod.ts";
 import { getRandomCity } from "./cities.ts";
 

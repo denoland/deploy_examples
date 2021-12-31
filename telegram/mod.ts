@@ -3,7 +3,7 @@ import {
   PathParams,
   serve,
   validateRequest,
-} from "https://deno.land/x/sift@0.4.0/mod.ts";
+} from "https://deno.land/x/sift@0.4.2/mod.ts";
 
 // For all requests to "/<TOKEN>" endpoint, we want to invoke handleTelegram() handler.
 // Recommend using a secret path in the URL, e.g. https://www.example.com/<token>.
