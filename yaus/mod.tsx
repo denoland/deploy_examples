@@ -4,7 +4,7 @@ import {
   jsx,
   PathParams,
   serve,
-} from "https://deno.land/x/sift@0.4.0/mod.ts";
+} from "https://deno.land/x/sift@0.4.2/mod.ts";
 import { nanoid } from "https://cdn.esm.sh/v14/nanoid@3.1.20/esnext/nanoid.js";
 
 serve({
