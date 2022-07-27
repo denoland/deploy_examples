@@ -21,7 +21,11 @@ A simple Telegram bot built with [grammY](https://grammy.dev).
      **Production Deployment** card at your project dashboard page.
 5. Now send the bot a `/start` or `/ping` command.
 
-<img align="center" src="preview.png" alt="demo of Telegram Bot Command" />
+<div align="center">
+
+![preview](https://raw.githubusercontent.com/dcdunkan/deploy_examples/main/telegram/preview.png)
+
+</div>
 
 ## Run Locally
 
